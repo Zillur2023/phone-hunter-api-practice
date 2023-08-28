@@ -7,3 +7,6 @@ const loadPhone2 = async () => {
     // displayPhones(phones)
 }
 loadPhone2()
+fetch(`https://openapi.programming-hero.com/api/phones?search=${searchText}`)
+    .then((response) => response.json())
+    .then((json) => phoneHunter(json.data));

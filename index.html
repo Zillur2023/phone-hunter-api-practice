@@ -21,12 +21,25 @@
             <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
             </div>
             <div id="show-all-container" class="hidden text-center my-8">
-                <button class="btn btn-accent">Show All</button>
+                <button onclick="handleShowAll()" class="btn btn-accent">Show All</button>
             </div>
         </section>
+        <!-- modal -->
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle">
+        <form method="dialog" class="modal-box">
+            <div id="show-details-container">
+                
+            </div>
+            <div class="modal-action">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+            </div>
+        </form>
+        </dialog>
     </main>
     <footer></footer>
     <script src="phone.js"></script>
-    <script src="phone2.js"></script>
+    <!-- <script src="phone2.js"></script> -->
 </body>
 </html>
